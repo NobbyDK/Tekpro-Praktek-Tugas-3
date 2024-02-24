@@ -34,12 +34,12 @@ class MenuMakanan {
         return stok;
     }
 
-    //Memeriksa apakah stok menu habis
+    //Fungsi untuk Memeriksa apakah stok Makanan habis
     public boolean isOutOfStock() {
         return stok == 0;
     }
     
-    public void kurangiStok(int jumlah) {
+    public void kurangiStok(int jumlah) {    //Prosedur Untuk Mengurangi stok makanan setelah pembelian
         stok -= jumlah;
     }
 }
