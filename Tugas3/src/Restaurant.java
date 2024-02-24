@@ -35,8 +35,8 @@
     jumlahMenu = 0; //Set jumlah menu awal menjadi 0
 }
 
-    //Metode untuk menambahkan menu makanan ke dalam restoran
-    public void tambahMenuMakanan(MenuMakanan menu) {
+    //Prosedur untuk menambahkan menu makanan ke dalam restoran yang nantinya akan dipanggi oleh RestaurantMain
+    public void tambahMenuMakanan(MenuMakanan menu) { 
         //Cek apakah masih ada tempat kosong untuk menambahkan menu baru
         if (jumlahMenu < daftarMenu.length) {
             daftarMenu[jumlahMenu] = menu; //Menambahkan menu ke dalam array
@@ -46,7 +46,7 @@
         }
     }
 
-    //Procedure untuk menampilkan menu makanan yang tersedia di restoran
+    //Prosedur untuk menampilkan menu makanan yang tersedia di restoran yang nantinya akan dipanggi oleh RestaurantMain
     public void tampilMenuMakanan() {
         System.out.println("\tMenu Makanan ");
         System.out.println("===========================");
@@ -58,7 +58,7 @@
         }
     }
 
-     // Metode untuk memesan menu
+     //Prosedur untuk memesan menu yang nantinya akan dipanggil oleh RestaurantMain
      public void pesanMenu(String namaMenu, int jumlahPesan) {
         for (int i = 0; i < jumlahMenu; i++) {
             if (daftarMenu[i].getNama().equalsIgnoreCase(namaMenu)) {
