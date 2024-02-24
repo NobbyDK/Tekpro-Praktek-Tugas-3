@@ -31,7 +31,7 @@ public class RestaurantMain {
             int jumlahPesan = Input.nextInt();
             Input.nextLine(); // Membersihkan newline di buffer
 
-            menu.pesanMenu(namaMenu, jumlahPesan); // Memesan menu
+            menu.pesanMenu(namaMenu, jumlahPesan); //Melakukan pemanggilan prosedur pemesanMenu
 
             System.out.print("Ingin memesan lagi? (y/n): ");
             pesanLagi = Input.nextLine().charAt(0);
